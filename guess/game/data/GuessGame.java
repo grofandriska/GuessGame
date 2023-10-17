@@ -1,3 +1,4 @@
+package game.data;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -88,7 +89,7 @@ public class GuessGame {
 				for (Player p : playerList) {
 					System.out.println("Looking for existing player name");
 					if (p.getName().equals(name)) {
-						System.out.println("games.guess.Player name is in use! Choose another name please.");
+						System.out.println("games.guess.game.data.Player name is in use! Choose another name please.");
 					} else {
 						System.out.println("player added");
 						playerList.add(new Player(name));

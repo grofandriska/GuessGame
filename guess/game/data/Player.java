@@ -1,3 +1,4 @@
+package game.data;
 
 public class Player {
 	private int maxTry = 3;
