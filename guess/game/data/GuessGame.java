@@ -19,7 +19,7 @@ public class GuessGame {
 		this.scanner = new Scanner(System.in);
 		this.initGameAndPlayers();
 		System.out.println(numberOfPlayers);
-		startGame();
+		System.out.println(startGame());
 	}
 	
 	public String startGame() {
@@ -29,9 +29,9 @@ public class GuessGame {
 		boolean isWon = false;
 		System.out.println("Starting the game");
 		for (int i = 0; i < playerList.size(); i++) {
-			System.out.println("\n It's your turn " + playerList.get(i).getName());
+			System.out.println("\nIt's your turn player called: " + playerList.get(i).getName());
 			for (int k = 0; k < playerList.get(i).getMaxTry(); k++) {
-				System.out.println("Type in the number of your guess! \nYou have " + (playerList.get(i).getMaxTry() - playerList.get(i).getGuess()) + " guesses left");
+				System.out.println("Please type in the number of your guess! You have " + (playerList.get(i).getMaxTry() - playerList.get(i).getGuess()) + " guesses left");
 				guess = scanner.nextInt();
 				if (guess == secretNumber) {
 					System.out.println("You have Won the game!");
@@ -42,7 +42,7 @@ public class GuessGame {
 					System.out.println("\nSecret number is smaller!");
 				}
 				if (isWon) {
-					return "The winner is : " + playerList.get(i).getName() + "! The Secret number was: " + secretNumber;
+					return "\nThe winner is : " + playerList.get(i).getName() + "! The Secret number was: " + secretNumber;
 				}
 			}
 		}
@@ -95,7 +95,7 @@ public class GuessGame {
 						playerList.add(new Player(name));
 					}
 				}
-				if (playerList.size() < 1){
+				if (playerList.size() < 1) {
 					playerList.add(new Player(name));
 				}
 			} else {
