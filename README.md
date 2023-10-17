@@ -1,2 +1,2 @@
-# game.data.GuessGame
+# game.data.GuessTheNumber
 Simple Java Input Game

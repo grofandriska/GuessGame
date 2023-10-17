@@ -1,11 +1,11 @@
 package game;
 
-import game.data.GuessGame;
+import game.data.GuessTheNumber;
 
 public class GameLoader {
 	
 	public static void main(String[] args) {
 		
-		new GuessGame();
+		new GuessTheNumber();
 	}
 }

@@ -1,10 +1,10 @@
 package game.data;
 
 public class Player {
-	private int maxTry = 3;
-	private int guess = 0;
 	private String name;
-	
+	private int maxTry = 3;
+	private int guessedNumbersCount = 0;
+
 	public Player(String name) {
 		this.name = name;
 	}
@@ -14,11 +14,11 @@ public class Player {
 	public void setMaxTry(int maxTry) {
 		this.maxTry = maxTry;
 	}
-	public int getGuess() {
-		return guess;
+	public int getGuessedNumbersCount() {
+		return guessedNumbersCount;
 	}
-	public void setGuess(int guess) {
-		this.guess = guess;
+	public void setGuessedNumbersCount(int guessedNumbersCount) {
+		this.guessedNumbersCount = guessedNumbersCount;
 	}
 	public String getName() {
 		return name;
